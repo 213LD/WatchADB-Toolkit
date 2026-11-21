@@ -1,0 +1,26 @@
+# Vendor ROM APKs & private signing material
+vendor_apks/
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+adbkey
+adbkey.pub
+
+# Compiled APK & build intermediates (pre-built APKs are distributed via GitHub Releases)
+*.apk
+*.idsig
+*.dex
+*.class
+obj/
+devlaunch/obj/
+pctest/obj/
+
+# Python / OS / temp artifacts
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

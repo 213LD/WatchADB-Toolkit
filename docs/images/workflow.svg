@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320" role="img" aria-label="WatchADB-Toolkit 5-Step Workflow">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#141b24"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2330"/>
+      <stop offset="100%" stop-color="#131922"/>
+    </linearGradient>
+    <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,1 L7,4 L0,7 Z" fill="#58a6ff"/>
+    </marker>
+    <style>
+      .title { font: 700 18px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #f0f6fc; }
+      .sub   { font: 400 12px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #8b949e; }
+      .step  { font: 700 10.5px 'Consolas', 'Segoe UI', monospace; fill: #0d1117; }
+      .ct    { font: 700 14px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #ffffff; }
+      .line  { font: 400 11.5px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #c9d1d9; }
+      .code  { font: 600 10.5px 'Consolas', 'Courier New', monospace; fill: #79c0ff; }
+      .tag   { font: 600 10.5px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .warn  { font: 500 11.5px 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #e3b341; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="318" rx="16" fill="url(#bgGrad)" stroke="#30363d" stroke-width="2"/>
+
+  <text x="480" y="34" text-anchor="middle" class="title">WatchADB-Toolkit · 隐藏开发者选项解锁与无线 ADB 全链路</text>
+  <text x="480" y="56" text-anchor="middle" class="sub">无需 Root · 绕过界面入口删减、内置浏览器白屏与脆弱数据线，5 步打通稳定无线调试通道</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(25,78)">
+    <rect width="162" height="170" rx="12" fill="url(#cardGrad)" stroke="#388bfd" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="14" y="14" width="54" height="20" rx="10" fill="#58a6ff"/>
+    <text x="41" y="28" text-anchor="middle" class="step">STEP 1</text>
+    <text x="14" y="56" class="ct">HTTP 直链下发</text>
+    <text x="14" y="80" class="code">python -m http.server</text>
+    <text x="14" y="100" class="line">手表浏览器直访 APK：</text>
+    <text x="14" y="118" class="code">&lt;PC_IP&gt;:8000/1.apk</text>
+    <rect x="14" y="134" width="134" height="24" rx="6" fill="#1f3a5f"/>
+    <text x="81" y="150" text-anchor="middle" class="tag" fill="#79c0ff">绕过网页渲染白屏</text>
+  </g>
+  <line x1="190" y1="163" x2="208" y2="163" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowHead)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(212,78)">
+    <rect width="162" height="170" rx="12" fill="url(#cardGrad)" stroke="#a371f7" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="14" y="14" width="54" height="20" rx="10" fill="#a371f7"/>
+    <text x="41" y="28" text-anchor="middle" class="step">STEP 2</text>
+    <text x="14" y="56" class="ct">调出隐藏设置</text>
+    <text x="14" y="80" class="line">安装并打开探索器：</text>
+    <text x="14" y="100" class="code">DevSettingsLauncher</text>
+    <text x="14" y="118" class="line">点击一键打开或筛选</text>
+    <rect x="14" y="134" width="134" height="24" rx="6" fill="#2e204b"/>
+    <text x="81" y="150" text-anchor="middle" class="tag" fill="#d2a8ff">直达开发者选项页</text>
+  </g>
+  <line x1="377" y1="163" x2="395" y2="163" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowHead)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(399,78)">
+    <rect width="162" height="170" rx="12" fill="url(#cardGrad)" stroke="#d29922" stroke-opacity="0.65" stroke-width="1.5"/>
+    <rect x="14" y="14" width="54" height="20" rx="10" fill="#e3b341"/>
+    <text x="41" y="28" text-anchor="middle" class="step">STEP 3</text>
+    <text x="14" y="56" class="ct">开启 USB 调试</text>
+    <text x="14" y="80" class="line">开启开关弹窗点「确定」</text>
+    <text x="14" y="100" class="line">重插 USB 线生效配置</text>
+    <text x="14" y="118" class="line">授权弹窗勾选一律允许</text>
+    <rect x="14" y="134" width="134" height="24" rx="6" fill="#3b2e13"/>
+    <text x="81" y="150" text-anchor="middle" class="tag" fill="#f2cc60">完成 RSA 密钥绑定</text>
+  </g>
+  <line x1="564" y1="163" x2="582" y2="163" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowHead)"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(586,78)">
+    <rect width="162" height="170" rx="12" fill="url(#cardGrad)" stroke="#3fb950" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="14" y="14" width="54" height="20" rx="10" fill="#3fb950"/>
+    <text x="41" y="28" text-anchor="middle" class="step">STEP 4</text>
+    <text x="14" y="56" class="ct">一键切无线 ADB</text>
+    <text x="14" y="80" class="code">recover_watch_adb.bat</text>
+    <text x="14" y="100" class="code">adb -d tcpip 5555</text>
+    <text x="14" y="118" class="line">自动读取 wlan0 IPv4</text>
+    <rect x="14" y="134" width="134" height="24" rx="6" fill="#163822"/>
+    <text x="81" y="150" text-anchor="middle" class="tag" fill="#7ee787">摆脱易断数据线</text>
+  </g>
+  <line x1="751" y1="163" x2="769" y2="163" stroke="#58a6ff" stroke-width="2" marker-end="url(#arrowHead)"/>
+
+  <!-- Step 5 -->
+  <g transform="translate(773,78)">
+    <rect width="162" height="170" rx="12" fill="url(#cardGrad)" stroke="#2ea043" stroke-opacity="0.7" stroke-width="1.5"/>
+    <rect x="14" y="14" width="54" height="20" rx="10" fill="#56d364"/>
+    <text x="41" y="28" text-anchor="middle" class="step">STEP 5</text>
+    <text x="14" y="56" class="ct">拔线无线安装</text>
+    <text x="14" y="80" class="code">adb connect &lt;IP&gt;:5555</text>
+    <text x="14" y="100" class="code">adb install -r 2.apk</text>
+    <text x="14" y="118" class="line">启动测试应用并截屏验证</text>
+    <rect x="14" y="134" width="134" height="24" rx="6" fill="#163822"/>
+    <text x="81" y="150" text-anchor="middle" class="tag" fill="#7ee787">日常开发全走 WiFi</text>
+  </g>
+
+  <!-- Bottom warning bar -->
+  <rect x="25" y="266" width="910" height="36" rx="8" fill="#1c1910" stroke="#5a4515" stroke-width="1"/>
+  <text x="480" y="289" text-anchor="middle" class="warn">避坑铁律：USB 仅在开启/恢复 tcpip 5555 时短暂插线 ｜ 切勿点击系统 USB 模式选择器（MTP/充电均会掐断 ADB） ｜ 建议路由器绑定静态 IP</text>
+</svg>
